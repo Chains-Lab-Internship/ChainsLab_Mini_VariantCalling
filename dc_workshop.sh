@@ -6,8 +6,8 @@ module load samtools/1.14
 module load bcftools/1.15
 
 # Create a working directory
-mkdir -p /project/pi_frederic_chain_uml_edu/Hackbio/dc_workshop
-cd /project/pi_frederic_chain_uml_edu/Hackbio/dc_workshop
+mkdir -p /project/pi_frederic_chain_uml_edu/Hackbio/Paschal_Repo/dc_workshop/
+cd /project/pi_frederic_chain_uml_edu/Hackbio/Paschal_Repo/dc_workshop/
 
 # Download the stickleback reference genome
 curl -L -o stickleback.fa.gz https://stickleback.genetics.uga.edu/downloadData/v5.0.1_assembly/stickleback_v5.0.1_assembly.fa.gz
@@ -54,12 +54,3 @@ samtools index results/sorted.bam
 
 # Viewing with tview
 samtools tview results/sorted.bam stickleback.fa
-
-# Using the 'cat' command to concatenate the lines of the variant view and then pipe the output to a text file named 'variant_view.txt'
-cat << EOF > variant_view.txt
-1         11        21        31        41        51        61        71        81        91        101       111       121       131       141       151
-CTTCTTCTCCTCTTCCTCTTCCTTCTCCCTCTTCCTCCCTGTCGGCGTGTCATCAGATCTGACCAGTGTGTGTGTGTGTTTGCGTGCGTGTGCGTGCGTGCGTGCGTGTTTGCGTGCGTGTTTGCGTGCGTGTTTGCGTGCGTGTGTGTGTGTGTGTGTGTGTG
-EOF
-
-# To view the content of 'variant_view.txt'
-cat variant_view.txt
