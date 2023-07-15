@@ -1,8 +1,11 @@
-# Chain's Lab Variant Calling
+# Chain's Lab Mini Variant Calling
 
 Title: Laboratory Report - Variant Calling Analysis of Stickleback Fish Genome
+
 Abstract: This laboratory report presents the experimental workflow and results of a variant calling analysis conducted on the genome data of three-spined stickleback fish (Gasterosteus aculeatus). The study aimed to identify single nucleotide variants (SNVs) in the stickleback genome using high-throughput sequencing data. The analysis pipeline involved read alignment, BAM file sorting, variant calling, and filtering steps. The work was performed on the Unity Cluster at the University of Massachusetts Lowell under the supervision of Dr. Frédéric JJ Chain.
+
 Introduction: The three-spined stickleback fish serves as a model organism for studying evolutionary genetics and adaptation. This laboratory study focused on analyzing the genome data of stickleback fish to identify genetic variations in the form of SNVs. The variant calling analysis aimed to provide insights into the genomic diversity and potential functional implications of these variants.
+
 Methods:
 Data Retrieval:
 Two paired-end FastQ files (ERR770591_1.fastq.gz and ERR770591_2.fastq.gz) were obtained from the European Bioinformatics Institute (EBI) FTP server. These files corresponded to a transcriptome profiling study conducted by Huang et al. (2016) on stickleback fish immune tissues.
